@@ -38,28 +38,43 @@ const PageFour = () => {
           <Image src={messenger} />
           <Image src={map} />
         </Box>
-
         <Box
           display={"flex"}
           flexDir={"row"}
           justifyContent={"center"}
           w={"100%"}
-          px={40}
+          px={[20, 20, 20, 20, 40, 60]}
         >
-          <Box display={"flex"} flexDir={"column"} w={"100%"} px={10} mb={20}>
+          <Box
+            display={"flex"}
+            flexDir={"column"}
+            w={"100%"}
+            px={[0, 0, 0, 0, 0, 10]}
+            mb={[0, 0, 0, 0, 0, 20]}
+          >
             <Box
               display={"flex"}
               flexDir={"row"}
               alignItems={"center"}
-              alignContent={"center"}
+              alignContent={"flex-start"}
               w={"100%"}
               justifyContent={"flex-start"}
+              textAlign={"start"}
             >
-              <Text fontFamily={"Poppins"} color={"white"} fontSize={25}>
+              <Text
+                color={"white"}
+                fontFamily={"Poppins"}
+                fontSize={25}
+                w={["20%", "20%", "20%", "20%", "16%", "15%"]}
+              >
                 We also
               </Text>
-              &nbsp;
-              <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={25}>
+              <Text
+                fontFamily={"Poppins"}
+                color={"#E76D0C"}
+                fontSize={25}
+                w={["20%", "20%", "20%", "20%", "10%", "15%"]}
+              >
                 offer
               </Text>
               <Divider
@@ -93,15 +108,15 @@ const PageFour = () => {
                   that will be used for personal or business operations
                 </Text>
                 <Box display={"flex"} mt={5} gap={5}>
-                  <MdOutlineArrowBackIosNew size={32} color={"#E76D0C"} />
-                  <MdOutlineArrowForwardIos size={32} color={"#E76D0C"} />
+                  <MdOutlineArrowBackIosNew size={25} color={"#E76D0C"} />
+                  <MdOutlineArrowForwardIos size={25} color={"#E76D0C"} />
                 </Box>
               </Box>
 
               <Image
                 src={car}
                 borderRadius={10}
-                w={"20%"}
+                w={["40%", "40%", "40%", "40%", "40%", "20%"]}
                 objectFit={"cover"}
               />
             </Box>
@@ -118,10 +133,10 @@ const PageFour = () => {
           alignItems={"center"}
         >
           <Link to={"/products"}>
-            <Image src={left} />
+            <Image src={left} w={10} />
           </Link>
           <Link to={"/services"}>
-            <Image src={right} />
+            <Image src={right} w={10} />
           </Link>
           <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={30}>
             OTHER LOANS

@@ -31,7 +31,6 @@ const PageFive = () => {
           display={"flex"}
           flexDir={"row"}
           justifyContent={"flex-end"}
-          mb={10}
           px={10}
           gap={5}
           mt={10}
@@ -77,16 +76,16 @@ const PageFive = () => {
                 justifyContent={"center"}
                 gap={20}
                 my={10}
-                w={"80%"}
+                w={"100%"}
                 flexWrap={"wrap"}
                 flexDir={"row"}
               >
-                <Image src={aselco} objectFit={"contain"} />
-                <Image src={electric} />
-                <Image src={water} />
-                <Image src={hctv} />
-                <Image src={socoteco} />
-                <Image src={palawan} />
+                <Image src={aselco} objectFit={"contain"} w={200} />
+                <Image src={electric} objectFit={"contain"} w={150} />
+                <Image src={water} objectFit={"contain"} w={150} />
+                <Image src={hctv} objectFit={"contain"} w={150} />
+                <Image src={socoteco} objectFit={"contain"} w={150} />
+                <Image src={palawan} objectFit={"contain"} w={150} />
               </Box>
             </Center>
           </Box>
@@ -95,17 +94,17 @@ const PageFive = () => {
           display={"flex"}
           flexDir={"row"}
           justifyContent={"flex-end"}
-          my={10}
+          mb={10}
           px={10}
           letterSpacing={1}
           gap={3}
           alignItems={"center"}
         >
           <Link to={"/offers"}>
-            <Image src={left} />
+            <Image src={left} w={10} />
           </Link>
           <Link to={"/milestones"}>
-            <Image src={right} />
+            <Image src={right} w={10} />
           </Link>
           <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={30}>
             OUR SERVICES

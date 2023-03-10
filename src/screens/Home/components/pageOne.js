@@ -44,7 +44,7 @@ const PageOne = () => {
           alignItems={"center"}
         >
           <Link to={"/whatwedo"}>
-            <Image src={right} />
+            <Image src={right} w={10} />
           </Link>
 
           <Text fontFamily={"Poppins"} color={"#fff"} fontSize={30}>

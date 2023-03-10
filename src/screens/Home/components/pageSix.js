@@ -149,10 +149,10 @@ const PageSix = () => {
           alignItems={"center"}
         >
           <Link to={"/services"}>
-            <Image src={left} />
+            <Image src={left} w={10} />
           </Link>
           <Link to={"/feedbacks"}>
-            <Image src={right} />
+            <Image src={right} w={10} />
           </Link>
           <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={30}>
             OTHER MILESTONES

@@ -39,9 +39,15 @@ const PageTwo = () => {
           flexDir={"row"}
           justifyContent={"center"}
           w={"100%"}
-          px={60}
+          px={[20, 20, 20, 20, 40, 60]}
         >
-          <Box display={"flex"} flexDir={"column"} w={"100%"} px={10} mb={20}>
+          <Box
+            display={"flex"}
+            flexDir={"column"}
+            w={"100%"}
+            px={[0, 0, 0, 0, 0, 10]}
+            mb={[0, 0, 0, 0, 0, 20]}
+          >
             <Box
               display={"flex"}
               flexDir={"row"}
@@ -54,8 +60,8 @@ const PageTwo = () => {
               <Text
                 color={"white"}
                 fontFamily={"Poppins"}
-                fontSize={25}
-                w={"30%"}
+                fontSize={[20, 20, 20, 20, 20, 25]}
+                w={["20%", "20%", "20%", "20%", "40%", "15%"]}
               >
                 Banking that
               </Text>
@@ -64,11 +70,15 @@ const PageTwo = () => {
                 borderColor={"#E76D0C"}
                 borderWidth={3}
                 borderRadius={5}
-                w={"100%"}
+                w={["100%", "100%", "100%", "100%", "80%", "100%"]}
                 ml={4}
               />
             </Box>
-            <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={25}>
+            <Text
+              fontFamily={"Poppins"}
+              color={"#E76D0C"}
+              fontSize={[20, 20, 20, 20, 20, 25]}
+            >
               Fits your needs
             </Text>
 
@@ -88,7 +98,8 @@ const PageTwo = () => {
           <Image
             src={meeting}
             borderRadius={10}
-            w={"30%"}
+            w={"40%"}
+            mx={10}
             objectFit={"cover"}
           />
         </Box>
@@ -103,10 +114,10 @@ const PageTwo = () => {
           alignItems={"center"}
         >
           <Link to={"/"}>
-            <Image src={left} />
+            <Image src={left} w={10} />
           </Link>
           <Link to={"/products"}>
-            <Image src={right} />
+            <Image src={right} w={10} />
           </Link>
           <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={30}>
             WHAT WE DO

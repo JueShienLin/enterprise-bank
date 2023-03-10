@@ -29,7 +29,6 @@ const PageThree = () => {
           display={"flex"}
           flexDir={"row"}
           justifyContent={"flex-end"}
-          mb={10}
           px={10}
           gap={5}
           mt={10}
@@ -74,8 +73,7 @@ const PageThree = () => {
               justifyContent={"center"}
               gap={15}
               my={10}
-              ml={20}
-              w={"90%"}
+              w={"100%"}
               flexWrap={"wrap"}
             >
               <Box
@@ -86,7 +84,7 @@ const PageThree = () => {
                 p={5}
                 borderRadius={10}
                 gap={5}
-                w={300}
+                w={[200, 200, 200, 200, 250, 300]}
                 boxShadow={"10px 20px 40px #9c9c9c"}
               >
                 <AiOutlineShop size={30} color={"#E76D0C"} />
@@ -107,7 +105,7 @@ const PageThree = () => {
                 flexDirection={"column"}
                 justifyContent={"flex-start"}
                 p={5}
-                w={300}
+                w={[200, 200, 200, 200, 250, 300]}
                 boxShadow={"10px 20px 40px #9c9c9c"}
                 borderRadius={10}
                 gap={5}
@@ -132,7 +130,7 @@ const PageThree = () => {
                 p={5}
                 borderRadius={10}
                 gap={5}
-                w={300}
+                w={[200, 200, 200, 200, 250, 300]}
                 boxShadow={"10px 20px 40px #9c9c9c"}
               >
                 <GiTwoCoins size={30} color={"#E76D0C"} />
@@ -156,7 +154,7 @@ const PageThree = () => {
                 p={5}
                 borderRadius={10}
                 gap={5}
-                w={300}
+                w={[200, 200, 200, 200, 250, 300]}
                 boxShadow={"10px 20px 40px #9c9c9c"}
               >
                 <AiOutlineCreditCard size={30} color={"#E76D0C"} />
@@ -180,7 +178,7 @@ const PageThree = () => {
                 p={5}
                 borderRadius={10}
                 gap={5}
-                w={300}
+                w={[200, 200, 200, 200, 250, 300]}
                 boxShadow={"10px 20px 40px #9c9c9c"}
               >
                 <BsCalendarCheck size={30} color={"#E76D0C"} />
@@ -202,17 +200,17 @@ const PageThree = () => {
           display={"flex"}
           flexDir={"row"}
           justifyContent={"flex-end"}
-          my={10}
+          mb={20}
           px={10}
           letterSpacing={1}
           gap={3}
           alignItems={"center"}
         >
           <Link to={"/whatwedo"}>
-            <Image src={left} />
+            <Image src={left} w={10} />
           </Link>
           <Link to={"/offers"}>
-            <Image src={right} />
+            <Image src={right} w={10} />
           </Link>
           <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={30}>
             OUR PRODUCTS

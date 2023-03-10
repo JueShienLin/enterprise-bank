@@ -19,7 +19,7 @@ const Sidebar = () => {
       display={"flex"}
       flexDirection={"column"}
       w={"20%"}
-      h={"945px"}
+      h={"100%"}
     >
       <Box
         display={"flex"}
@@ -81,7 +81,7 @@ const Sidebar = () => {
               paddingX={5}
             >
               <FaUserAlt />
-              <Text fontFamily={"Poppins"} fontSize={16}>
+              <Text fontFamily={"Poppins"} fontSize={[10, 10, 10, 10, 12, 16]}>
                 Personal Banking
               </Text>
             </Box>
@@ -107,7 +107,7 @@ const Sidebar = () => {
             paddingX={5}
           >
             <FaBriefcase onClick={() => {}} />
-            <Text fontFamily={"Poppins"} fontSize={16}>
+            <Text fontFamily={"Poppins"} fontSize={[10, 10, 10, 10, 12, 16]}>
               Business Banking
             </Text>
           </Box>
@@ -132,7 +132,7 @@ const Sidebar = () => {
               paddingX={5}
             >
               <AiFillBank />
-              <Text fontFamily={"Poppins"} fontSize={16}>
+              <Text fontFamily={"Poppins"} fontSize={[10, 10, 10, 10, 12, 16]}>
                 About Us
               </Text>
             </Box>

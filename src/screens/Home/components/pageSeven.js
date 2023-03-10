@@ -39,9 +39,9 @@ const PageSeven = () => {
           flexDir={"row"}
           justifyContent={"center"}
           w={"100%"}
-          px={10}
+          px={5}
         >
-          <Box display={"flex"} flexDir={"column"} w={"100%"} px={10} mb={10}>
+          <Box display={"flex"} flexDir={"column"} w={"100%"} mb={10}>
             <Box
               display={"flex"}
               flexDir={"row"}
@@ -69,10 +69,9 @@ const PageSeven = () => {
             <Box
               display={"inline-flex"}
               justifyContent={"center"}
-              gap={20}
+              gap={10}
               my={10}
-              ml={20}
-              w={"90%"}
+              w={"100%"}
               flexWrap={"wrap"}
             >
               <Box
@@ -83,7 +82,7 @@ const PageSeven = () => {
                 p={5}
                 borderRadius={10}
                 gap={5}
-                w={350}
+                w={300}
                 boxShadow={"10px 20px 40px #9c9c9c"}
               >
                 <Box
@@ -128,7 +127,7 @@ const PageSeven = () => {
                 p={5}
                 borderRadius={10}
                 gap={5}
-                w={350}
+                w={300}
                 boxShadow={"10px 20px 40px #9c9c9c"}
               >
                 <Box
@@ -179,7 +178,7 @@ const PageSeven = () => {
           alignItems={"center"}
         >
           <Link to={"/milestones"}>
-            <Image src={left} />
+            <Image src={left} w={10} />
           </Link>
 
           <Text fontFamily={"Poppins"} color={"#E76D0C"} fontSize={30}>
